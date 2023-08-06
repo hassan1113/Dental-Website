@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Gallery cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <!-- Swiper slider cdn -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap');
+    body{
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    header{
+        background-image: linear-gradient(to right, #80d7f2 , #1e5df4);
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .logo{
+        width: 175px;  
+    }
+    .bg{
+        background: rgba(0, 0, 0, 0.4) url('img/bg1copy.jpg');
+        background-size: 100% 100%;
+        height: 650px;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+
+    }
+    .txt{
+        font-weight: bolder !important;
+        font-size: 60px;
+    }
+    .box{
+        margin-top: 60px;
+        padding-left: 10px !important;
+    }
+    .br{
+        border-bottom: 5px solid #06b4fb;
+        width: 80%;
+        border-radius: 30px;
+    }
+    .btn1{
+        background-color: #06b4fb;
+        border-radius: 0;
+        color: white;
+        width: 130px;
+    }
+    .btn2{
+        width: 130px;
+        border-radius: 0;
+        background-color: white;
+        color: #377cf3;
+        border:1px solid #377cf3;
+    }
+    .btn2:hover{
+        background-color: #377cf3;
+        color: white;
+    }
+    .btn3{
+        background-color: #00e676;
+        /* background-color: #00a884; */
+        color: white;
+        position: fixed;
+        border-radius: 30px;
+        margin-right: 20px;
+        z-index: 111;
+        bottom: 3%;
+        right: 0%;
+        box-shadow: 0px 5px 8px 0px #00a884;
+    }
+    .btn4{
+        background-color: #06b4fb;
+        border-radius: 0;
+        color: white;
+        width: 100px;
+    }
+    .ic1{
+        width: 100px;
+        height: 130px;
+    }
+    form{
+        border-radius: 15px;
+        background-color: rgba(6,180,251, 0.5) !important;
+    }
+    .icc1{
+        height: 150px;
+        width: 150px;
+    }
+    .crd1{
+        border-style: inset;
+        border-width: 10px;
+        border-color: #06b4fb;
+        border-radius: 15px;
+    }
+    .cu{
+        background-image: linear-gradient(to right, #80d7f2 , #1e5df4);
+    }
+    .zoom{
+        transition: 0.2s;
+    }
+   
+    .zoom:hover{
+        transition: 0.2s;
+        opacity: 0.8;
+    }
+    .ss{
+        border-radius: 20px;
+        border-style: unset;
+        margin-top: 5px;
+    }
+    .sliderr{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    @media screen and (max-width: 991px) {
+        .bg{
+        background-repeat: no-repeat !important;
+        height: 500px !important;
+    }
+    .ss{
+        display: none;
+    }
+    }
+    @media screen and (max-width: 767px) {
+        .bg{
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            height: 400px !important;
+    }
+    form{
+        background: #06b4fb !important;
+    }
+    .txt{
+        font-size: 50px;
+        text-align: center;
+    }
+    .brr{    
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .br{
+        border-bottom: 5px solid #06b4fb;
+        width: 80%;
+        border-radius: 30px;
+    }
+    .txt1{
+        text-align: center;
+    }
+    .btnn{
+        text-align: center;
+    }
+    .two{
+        margin-top: 60%;
+    }
+    }
+    .box{
+        padding-left: 10px !important;
+    }
+    @media screen and (max-width: 505px) {
+        .two{
+        margin-top: 76%;
+    }
+}
+    @media screen and (max-width: 466px) {
+        .two{
+        margin-top: 90%;
+    }
+    }
+    @media screen and (max-width: 450px) {
+        .bg{
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            height: 300px !important;
+    }
+    .two{
+        margin-top: 120%;
+    }
+    .txt{
+        font-size: 40px;
+        margin-top: -50px;
+    }
+    .txt2{
+        font-size: 30px;
+    }
+    .box{
+        margin-top: 130px;
+    }
+    }
+    @media screen and (max-width: 400px) {
+        .two{
+        margin-top: 130%;
+    }
+}
+@media screen and (max-width: 390px) {
+        .two{
+        margin-top: 140%;
+    }
+    }
+    @media screen and (max-width: 384px) {
+        .two{
+        margin-top: 148%;
+    }
+    }
+    @media screen and (max-width: 370px) {
+        .two{
+        margin-top: 160%;
+    }
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" class="logo" alt="">
+                </a>
+              </nav>
+        </div>
+    </header>
+
+    <!-- body -->
+    <div class="container-fluid p-0">
+        <div class="bg">
+            <div class="row m-0 h-100">
+                <div class="col-md-6 my-3">
+                    <div class="box">
+                        <h1 class="mb-0 txt"><b class="text-white">Health and Beauty</b></h1>
+                        <div class="brr">
+                        <div class="br my-2"></div>
+                        </div>
+                        <h4 class="text-white txt1">Your Health is Our Priority.</h4>
+                        <div class="btnn">
+                            <a href="#"><button class="btn btn1 py-1">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <form class="p-3" action="">
+                        <h1 class="text-white text-center"><b>Book an Appointment</b></h1>  
+                        <label for="name" class="text-white ml-1">Name</label>
+                        <input type="text" id="name" class="form-control mb-1">
+                        <label for="phone" class="text-white ml-1">Phone</label>
+                        <input type="number" id="phone" class="form-control mb-1">
+                        <label for="email" class="text-white ml-1">Email</label>
+                        <input type="email" id="email" class="form-control mb-1">
+                        <label for="message" class="text-white ml-1">Message a Doctor</label>
+                        <textarea name="" id="message" class="form-control" rows="3"></textarea>
+                        <div class="text-right my-2">
+                        <a href="#"><button class="btn btn4 py-1">Send</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+       <div class="two">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 my-4">
+                <h1 class="text-center"><b>Quality Care.</b></h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minima repellendus voluptates beatae aperiam vitae doloremque qui repudiandae ab facilis error nesciunt, atque, consequatur, dicta ducimus esse dolorem reprehenderit aliquam?</p>
+            </div>
+            <div class="col-lg-3 col-md-2"></div>
+        </div>
+       </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card crd1">
+                    <div class="text-center py-3">
+                        <img src="img/icc2.png" class="icc1" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center"><b>Technologies</b></h4>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card crd1">
+                    <div class="text-center py-3">
+                        <img src="img/icc1.png" class="icc1" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center"><b>Our Docters</b></h4>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card crd1">
+                    <div class="text-center py-3">
+                        <img src="img/icc3.png" class="icc1" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center"><b>Smile Design</b></h4>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="my-3" style="background-image: linear-gradient(to right, #80d7f2 , #1e5df4);">
+        <div class="container-fluid sliderr">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="img/sl1.jpg" class="my-2" width="100%" alt="">
+                      <!-- <img src="img/sl2.jpg" class="my-2" width="100%" alt=""> -->
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/sl5.jpg" class="my-2" width="100%" alt="">
+                    <!-- <img src="img/sl4.jpg" class="my-2" width="100%" alt=""> -->
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/sl3.jpg" class="my-2" width="100%" alt="">
+                    <!-- <img src="img/sl6.jpg" class="my-2" width="100%" alt=""> -->
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/sl4.jpg" class="my-2" width="100%" alt="">
+                    <!-- <img src="img/sl8.jpg" class="my-2" width="100%" alt=""> -->
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container ">
+       <div class="mt-3">
+        <h1 class="text-center py-4"><b>Lorem Ipsum</b></h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g1.webp" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g1.webp" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g2.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g2.jpg" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g3.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g3.jpg" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g4.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g4.jpg" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g5.jpg" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g5.jpg" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g6.png" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g6.png" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g7.jpeg" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g7.jpeg" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 my-2" data-aos="fade-right" style="overflow-x: hidden">
+                <a href="img/g8.webp" class="fancybox" data-fancybox="gallery1">
+                  <img src="img/g8.webp" class="zoom" alt="" width="100%">
+                </a>
+              </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- contact us last -->
+    <div class="container-fluid p-0 cu mt-5">
+        <div class="py-5">
+            <h1 class="text-center text-white txt2"><b>Still Confused??<br>Contact us to get more detailed Information</b></h1>
+            <div class="text-center">
+                <a href="#"><button class="btn btn2 my-2">Contact Us</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="text-right">
+            <a href="#"><button class="btn btn3 my-2">Any questions? Ask in Whatsapp <i class="fab fa-whatsapp"></i></button></a>
+        </div>
+    </div>
+
+    
+<!-- Bootstrap links -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    
+<!-- Gallery script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     loop: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+   });
+ </script>
+</body>
+</html>
